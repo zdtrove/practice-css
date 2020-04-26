@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color: #fff;
+    background: #262626;
+}
+.logo {
+    font-family: cursive;
+    font-size: 25px;
+}
+.menu-area ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.menu-area ul li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.contact-btn button {
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.header-area {
+    height: 100vh;
+    background-image: url(bg.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-area ul {
+        padding: 0;
+    }
+    .menu-area ul li {
+        margin: 0 15px 0 0;
+    }
+}
+@media (max-width: 480px) {
+    .logo {
+        margin-top: 0;
+    }
+    nav {
+        padding: 30px;
+    }
+}

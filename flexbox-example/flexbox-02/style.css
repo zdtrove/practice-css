@@ -1,0 +1,78 @@
+@font-face {
+    font-family: big-john;
+    src: url(big-john.otf);
+}
+@font-face {
+    font-family: merienda;
+    src: url(merienda.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(poppins.ttf);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background: bisque;
+}
+.wrapper {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+.single-team {
+    position: relative;
+    cursor: pointer;
+}
+.box {
+    width: 350px;
+    height: 220px;
+    transition: .6s;
+}
+.img {
+    background: url(1.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(110px);
+}
+.single-team:hover .img {
+    transform: translateY(0);
+}
+.img-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+    transform: translateY(-110px);
+    position: relative;
+    background: #f1f1f1;
+}
+.single-team:hover .img-text {
+    transform: translateY(0);
+}
+.text-area h2 {
+    margin: 0;
+    font-family: big-john;
+}
+.text-area h3 {
+    font-family: merienda;
+    margin: 10px 0;
+}
+.text-area p {
+    margin: 0;
+    font-family: poppins;
+}
+.text-area i {
+    margin-right: 10px;
+    margin-top: 15px;
+}
