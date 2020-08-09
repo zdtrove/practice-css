@@ -1,0 +1,61 @@
+.box {
+	background: #cc0000;
+	height: 120px;
+	width: 120px;
+	margin: 50px auto;
+	transition: all 3s;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.rotateX {
+	transform: perspective(200px) rotateX(45deg);
+}
+
+.rotateY {
+	transform: perspective(200px) rotateY(45deg);
+}
+
+.rotateZ {
+	transform: perspective(200px) rotateZ(45deg);
+}
+
+.scale {
+	margin: 100px auto;
+	transform: scale(1.5, 1.5);
+}
+
+.scaleX {
+	transform: scaleX(1.5);
+}
+
+.scaleY {
+	margin: 100px auto;
+	transform: scaleY(1.5);
+}
+
+.skew {
+	transform: skew(20deg, 20deg);
+}
+
+.skewX {
+	transform: skewX(20deg);
+}
+
+.skewY {
+	transform: skewY(20deg);
+}
+
+.translate {
+	transform: translate(20px, 20px);
+}
+
+.translateX {
+	transform: translateX(20px);
+}
+
+.translateY {
+	transform: translateY(20px);
+}

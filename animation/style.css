@@ -1,0 +1,44 @@
+.box {
+	background-color: #476CFF;
+    text-align: center;
+    width: 100px;
+}
+
+.animation1 {
+	animation: moveRightWidth 5s infinite;
+}
+
+.animation2 {
+	animation: moveRightWidth 5s infinite alternate;
+}
+
+.animation3 {
+	position: relative;
+	animation: moveRightPosition 5s infinite alternate;
+}
+
+.animation4 {
+	position: relative;
+	animation: moveRightTransform 5s infinite alternate;
+}
+
+@keyframes moveRightWidth {
+	from { width: 100px; }
+	to { width: 300px; }
+}
+
+@keyframes moveRightPosition {
+	from { left: 0; }
+	to { left: 100px; }
+}
+
+@keyframes moveRightTransform {
+	from { 
+		left: 0;
+		transform: rotate(0deg);
+	}
+	to { 
+		left: 100px;
+		transform: rotate(360deg);
+	}
+}
